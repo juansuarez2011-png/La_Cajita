@@ -10,15 +10,15 @@
     
     <style>
         :root {
-            --bg-color: #0f0f0f;          /* Fondo base ultra oscuro */
-            --block-header-bg: #1e1e1e;   /* Gris oscuro solicitado para intenciones */
-            --row-bg: #151515;            /* Fondo de las filas de escena */
-            --row-hover: #1c1c1c;         /* Hover sutil de producción */
+            --bg-color: #0f0f0f;
+            --block-header-bg: #1e1e1e;
+            --row-bg: #151515;
+            --row-hover: #1c1c1c;
             --text-main: #f5f5f5;
             --text-muted: #b0b0b0;
-            --accent-color: #e67e22;      /* Acento cálido del atardecer caraqueño */
+            --accent-color: #e67e22;
             --font-clean: 'Inter', sans-serif;
-            --font-cinema: 'Courier New', Courier, monospace; /* Tipografía de libreto */
+            --font-cinema: 'Courier New', Courier, monospace;
         }
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -27,10 +27,9 @@
             color: var(--text-main); 
             font-family: var(--font-clean); 
             line-height: 1.6; 
-            padding-top: 90px; /* Espacio libre para la barra superior fija */
+            padding-top: 90px;
         }
         
-        /* --- BARRA SUPERIOR FIJA CON EL BOTÓN DE VIDEO --- */
         .audio-player-container {
             position: fixed;
             top: 0;
@@ -58,7 +57,6 @@
             gap: 1.5rem;
         }
 
-        /* Botón para ver el video en Google Drive */
         .btn-view-video {
             background-color: var(--accent-color);
             color: #ffffff;
@@ -86,14 +84,12 @@
         header h1 span { color: var(--accent-color); }
         header p { color: var(--text-muted); font-size: 1rem; margin-top: 0.4rem; font-weight: 300; }
 
-        /* --- CONTENEDOR DEL LIBRETO --- */
         .storytelling-matrix {
             max-width: 1350px;
             margin: 0 auto 5rem auto;
             padding: 0 2rem;
         }
 
-        /* --- ESTRUCTURA DE BLOQUE NARRATIVO --- */
         .narrative-block {
             margin-bottom: 3.5rem;
             border: 1px solid #252525;
@@ -135,7 +131,6 @@
             font-weight: 700;
         }
 
-        /* --- FILAS PARALELAS Y SINCRONIZADAS --- */
         .scene-row {
             display: grid;
             grid-template-columns: 10% 25% 40% 25%;
@@ -207,7 +202,6 @@
             text-align: right;
         }
 
-        /* --- RESPONSIVE DESIGN INTERACTIVO --- */
         @media (max-width: 950px) {
             body { padding-top: 140px; }
             .audio-player-container { 
@@ -258,7 +252,7 @@
             <span class="subtitle">Sincronización Cinemática Multicolumna</span>
         </div>
         <div class="controls-group">
-            <a href="https://drive.google.com/file/d/1lD6iunjh4fIbSHHsoHaSyW7pPNwW8Abk/view?usp=sharing" target="_blank" class="btn-view-video">
+            <a href="https://drive.google.com/file/d/1KwoaxbJyH0m5uLqVH1RxQWMFynYmMH-w/view?usp=sharing" target="_blank" class="btn-view-video">
                 🎬 Ver Video Presentación
             </a>
         </div>
@@ -271,25 +265,24 @@
 
     <main class="storytelling-matrix">
 
+        <!-- BLOQUE 1 (sin cambios) -->
         <section class="narrative-block">
             <div class="block-header">
                 <h2>🗺️ BLOQUE 1: EL UMBRAL Y LA MEMORIA (0:00 - 0:44)</h2>
                 <p><strong>INTENCIÓN NARRATIVA:</strong> El choque emocional del retorno. El protagonista regresa del exilio. El paisaje físico activa los recuerdos de su infancia y sus raíces dominico-venezolanas antes de tocar el suelo de la capital.</p>
             </div>
-            
             <div class="matrix-labels">
                 <div>Tiempo (10%)</div>
                 <div>Letra Exacta (25%)</div>
                 <div>Guión Técnico y Acción (40%)</div>
                 <div>Storyboard / Foto (25%)</div>
             </div>
-
             <div class="scene-row">
                 <div class="col-time">0:00 - 0:07</div>
                 <div class="col-lyric">[Intro Instrumental - Punteo de guitarra melancólico]</div>
                 <div class="col-script">
                     <strong>PLANO GENERAL GRANDE (P.G.G.) - EL ÁVILA (GALIPÁN)</strong>
-                    El video abre en silencio visual. Una toma majestuosa desde la cima de la montaña. Abajo, entre las nubes y el Mar Caribe, se descubre la pista del Aeropuerto de Maiquetía. Es la mirada del que regresa desde lo alto.
+                    El video abre en silencio visual. Una toma majestuosa desde la cima de la montaña. Abajo, entre las nubes y el Mar Caribe, se descubre la pista del Aeropuerto de Maiquetía.
                 </div>
                 <div class="col-storyboard">
                     <div class="image-container">
@@ -298,7 +291,6 @@
                     <div class="filename-label">Bloque1_Foto1.jpg</div>
                 </div>
             </div>
-
             <div class="scene-row">
                 <div class="col-time">0:07 - 0:12</div>
                 <div class="col-lyric">[Mantenimiento del punteo melancólico]</div>
@@ -313,7 +305,6 @@
                     <div class="filename-label">Bloque1_Foto2.jpg</div>
                 </div>
             </div>
-
             <div class="scene-row">
                 <div class="col-time">0:12 - 0:19</div>
                 <div class="col-lyric">[Entra el ritmo completo - Golpe de Güiro y Bongo]</div>
@@ -328,7 +319,6 @@
                     <div class="filename-label">Bloque1_Foto3.jpg</div>
                 </div>
             </div>
-
             <div class="scene-row">
                 <div class="col-time">0:19 - 0:25</div>
                 <div class="col-lyric">[Mantenimiento del ritmo instrumental]</div>
@@ -343,7 +333,6 @@
                     <div class="filename-label">Bloque1_Foto4.jpg</div>
                 </div>
             </div>
-
             <div class="scene-row">
                 <div class="col-time">0:25 - 0:34</div>
                 <div class="col-lyric">[Pre-arpegio, la música prepara la entrada de la voz]</div>
@@ -358,7 +347,6 @@
                     <div class="filename-label">Bloque1_Foto5.jpg</div>
                 </div>
             </div>
-
             <div class="scene-row">
                 <div class="col-time">0:34 - 0:44</div>
                 <div class="col-lyric">[Últimos compases instrumentales antes de la primera estrofa]</div>
@@ -375,12 +363,12 @@
             </div>
         </section>
 
+        <!-- BLOQUE 2 ACTUALIZADO: LA GEOGRAFÍA DEL ANHELO (0:44 - 1:14) -->
         <section class="narrative-block">
             <div class="block-header">
                 <h2>🗺️ BLOQUE 2: LA GEOGRAFÍA DEL ANHELO (0:44 - 1:14)</h2>
-                <p><strong>INTENCIÓN NARRATIVA:</strong> La revelación de la ciudad. Al salir de la oscuridad del túnel, el protagonista se reencuentra con la inmensidad del valle. Caracas se presenta ante él como la mujer amada que lo estuvo esperando.</p>
+                <p><strong>INTENCIÓN NARRATIVA:</strong> El choque visual del reencuentro con la geografía caraqueña justo al salir de la penumbra del viaje inicial. La ciudad se presenta como una extensión del deseo y la memoria.</p>
             </div>
-
             <div class="matrix-labels">
                 <div>Tiempo (10%)</div>
                 <div>Letra Exacta (25%)</div>
@@ -389,42 +377,161 @@
             </div>
 
             <div class="scene-row">
-                <div class="col-time">0:44 - 1:04</div>
-                <div class="col-lyric">"Yo tengo un cariñito aquí lo tengo y te lo quiero dar, yo lo he guardado para ti, sabía que el momento iba a llegar..."</div>
+                <div class="col-time">0:44 - 0:54</div>
+                <div class="col-lyric">[Entrada formal del ritmo caribeño / Primer corte rítmico tras el túnel]</div>
                 <div class="col-script">
-                    <strong>PLANO GENERAL (P.G.) FIJO - MIRADOR DE CASALTA 4</strong>
-                    El auto sale del túnel (estallido de luz) y corta al mirador del oeste. El protagonista está de espaldas contemplando la inmensidad de la ciudad. La letra de la canción se convierte en sus pensamientos dirigidos a Caracas.
+                    <strong>PLANO DE ESTABLECIMIENTO - VIADUCTO AUTOPISTA CARACAS - LA GUAIRA</strong>
+                    Plano general que captura la fuerza cinética de la subida, mostrando el puente o viaducto encajonado por las montañas del Ávila que abrazan la carretera. Transmite la inmensidad del regreso.
                 </div>
                 <div class="col-storyboard">
                     <div class="image-container">
-                        <img src="https://lh3.googleusercontent.com/d/16UzgBEca6pQFj4gwdXrfcOshPx4p4ZaE" alt="Casalta 4">
+                        <img src="https://lh3.googleusercontent.com/d/1jFGhZeqGp-bF7Mm8jlBJh3McfgfGr6h9" alt="Viaducto autopista">
                     </div>
-                    <div class="filename-label">bloque2_01_vista_casalta4.jpg</div>
+                    <div class="filename-label">Bloque2_Foto1.jpg</div>
+                </div>
+            </div>
+
+            <div class="scene-row">
+                <div class="col-time">0:54 - 1:04</div>
+                <div class="col-lyric">[Verso inicial que introduce el misterio del objeto o la nostalgia]</div>
+                <div class="col-script">
+                    <strong>PLANO DETALLE SUBJETIVO (POV) - INTERIOR DEL VEHÍCULO</strong>
+                    Las manos del protagonista, curtidas y cansadas por el viaje, sostienen y acarician con delicadeza la pequeña cajita de madera sobre sus piernas, convirtiéndola en el ancla emocional del relato.
+                </div>
+                <div class="col-storyboard">
+                    <div class="image-container">
+                        <img src="https://lh3.googleusercontent.com/d/1wfK0it-1-CMrwQnfMVB1ogZ1Dl_FFXGr" alt="Manos sosteniendo la cajita">
+                    </div>
+                    <div class="filename-label">Bloque2_Foto2.jpg</div>
                 </div>
             </div>
 
             <div class="scene-row">
                 <div class="col-time">1:04 - 1:14</div>
-                <div class="col-lyric">"Lo tengo de hace rato ya, lo tengo en una caja secreta..."</div>
+                <div class="col-lyric">[Cierre de la primera frase melódica antes de entrar al corazón de la ciudad]</div>
                 <div class="col-script">
-                    <strong>PLANO SUBJETIVO EN MOVIMIENTO - AUTOPISTA</strong>
-                    La cámara avanza por la vía principal. Al fondo, pasamos al lado de la Esfera de Caracas (Jesús Soto). El lente mantiene el foco en el marco del carro, dejando la obra sutilmente desenfocada para evocar un recuerdo flotante.
+                    <strong>GRAN PLANO GENERAL FIJO - MIRADOR DE CASALTA 4 (OESTE)</strong>
+                    Desde el oeste de la ciudad, se aprecia la densidad del paisaje urbano, los techos y las primeras barriadas que se extienden bajo la luz diurna, contextualizando el entorno del personaje.
+                </div>
+                <div class="col-storyboard">
+                    <div class="image-container">
+                        <img src="https://lh3.googleusercontent.com/d/1cLhe4LziCpmMCXe3-UtEUHkFfEblo6EZ" alt="Mirador Casalta 4">
+                    </div>
+                    <div class="filename-label">Bloque2_Foto3.jpg</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BLOQUE 3 ACTUALIZADO: EL PULSO CIVIL (1:14 - 2:00) -->
+        <section class="narrative-block">
+            <div class="block-header">
+                <h2>🗺️ BLOQUE 3: EL PULSO CIVIL (1:14 - 2:00)</h2>
+                <p><strong>INTENCIÓN NARRATIVA:</strong> Inmersión del protagonista en el bullicio, los íconos de modernidad y los espacios públicos emblemáticos de la capital. Metáfora de libertad y reencuentro.</p>
+            </div>
+            <div class="matrix-labels">
+                <div>Tiempo (10%)</div>
+                <div>Letra Exacta (25%)</div>
+                <div>Guión Técnico y Acción (40%)</div>
+                <div>Storyboard / Foto (25%)</div>
+            </div>
+
+            <div class="scene-row">
+                <div class="col-time">1:14 - 1:21</div>
+                <div class="col-lyric">[Transición instrumental / Entrada de los metales en la bachata]</div>
+                <div class="col-script">
+                    <strong>PLANO GENERAL FIJO CON CORTE RÍTMICO - ESFERA DE SOTO</strong>
+                    El carro pasa a velocidad normal justo frente a la Esfera de Caracas (Jesús Soto) en la autopista. El sol caribeño destella sobre las varillas naranjas de la obra plástica, funcionando como el portal de bienvenida formal a Caracas.
                 </div>
                 <div class="col-storyboard">
                     <div class="image-container">
                         <img src="https://lh3.googleusercontent.com/d/1jJlArhFWm4I6888-Dg6Aat7oVIscIbhE" alt="Esfera de Soto">
                     </div>
-                    <div class="filename-label">bloque2_02_esfera_soto.jpg</div>
+                    <div class="filename-label">Bloque3_Foto1.jpg</div>
+                </div>
+            </div>
+
+            <div class="scene-row">
+                <div class="col-time">1:21 - 1:30</div>
+                <div class="col-lyric">[Línea de la canción que evoca ideas de libertad, vuelo o el aire de la ciudad]</div>
+                <div class="col-script">
+                    <strong>PLANO DETALLE EN CONTRAPICADO - PLAZA PÚBLICA</strong>
+                    Una bandada de palomas levanta el vuelo simultáneamente desde el suelo de una plaza pública hacia el cielo abierto de la capital. Metáfora sutil de libertad y reencuentro.
+                </div>
+                <div class="col-storyboard">
+                    <div class="image-container">
+                        <img src="https://lh3.googleusercontent.com/d/1MqI8exgLVoO8XOnWXB7Fgew2eweaZXAR" alt="Palomas volando">
+                    </div>
+                    <div class="filename-label">Bloque3_Foto2.jpg</div>
+                </div>
+            </div>
+
+            <div class="scene-row">
+                <div class="col-time">1:30 - 1:38</div>
+                <div class="col-lyric">[Frase clave que describe el latido o el movimiento urbano]</div>
+                <div class="col-script">
+                    <strong>PLANO GENERAL IMPONENTE - TORRE DE LA PREVISORA</strong>
+                    Cámara apuntando hacia arriba desde el nivel de la calle. Encuadre limpio de la emblemática Torre de la Previsora y su gran reloj digital recortando el cielo azul, marcando el epicentro geográfico en Plaza Venezuela.
+                </div>
+                <div class="col-storyboard">
+                    <div class="image-container">
+                        <img src="https://lh3.googleusercontent.com/d/1_lqgRpPWVoc_fp5CewzoQQM-ubEC9VKD" alt="Torre La Previsora">
+                    </div>
+                    <div class="filename-label">Bloque3_Foto3.jpg</div>
+                </div>
+            </div>
+
+            <div class="scene-row">
+                <div class="col-time">1:38 - 1:45</div>
+                <div class="col-lyric">[Momento de pausa melódica o silencio instrumental íntimo]</div>
+                <div class="col-script">
+                    <strong>PLANO MEDIO SUBJETIVO (POV) - CAFÉ DE LA TORRE PREVISORA</strong>
+                    En primer término una taza de café humeante; a través del gran ventanal de vidrio al fondo, se domina la caída visual hacia el distribuidor y Plaza Venezuela.
+                </div>
+                <div class="col-storyboard">
+                    <div class="image-container">
+                        <img src="https://lh3.googleusercontent.com/d/1sMapYX37eP5DJ5n3ZF-pnw_DHM89nmii" alt="Café en la Torre">
+                    </div>
+                    <div class="filename-label">Bloque3_Foto4.jpg</div>
+                </div>
+            </div>
+
+            <div class="scene-row">
+                <div class="col-time">1:45 - 1:52</div>
+                <div class="col-lyric">[Desarrollo de la melodía principal que conecta con las raíces de la gente]</div>
+                <div class="col-script">
+                    <strong>PLANO MEDIO GENERAL - BULEVAR DE SABANA GRANDE / EL GRAN CAFÉ</strong>
+                    Enfoque en la mítica terraza exterior, los toldos y las mesas adoquinadas. Captura la atmósfera bohemia y civil del transeúnte caraqueño, el espacio que el protagonista añoraba.
+                </div>
+                <div class="col-storyboard">
+                    <div class="image-container">
+                        <img src="https://lh3.googleusercontent.com/d/1D5Muw4x1XM9ODyhO4_UYSy84Pxym94zh" alt="Gran Café Sabana Grande">
+                    </div>
+                    <div class="filename-label">Bloque3_Foto5.jpg</div>
+                </div>
+            </div>
+
+            <div class="scene-row">
+                <div class="col-time">1:52 - 2:00</div>
+                <div class="col-lyric">[Cierre del bloque en su punto más alto]</div>
+                <div class="col-script">
+                    <strong>GRAN PLANO GENERAL PANORÁMICO - POLICLÍNICA METROPOLITANA (CAURIMARE)</strong>
+                    Visual que domina el valle de este a oeste, mostrando la silueta icónica de la cordillera de El Ávila custodiando la ciudad bajo la luz del día.
+                </div>
+                <div class="col-storyboard">
+                    <div class="image-container">
+                        <img src="https://lh3.googleusercontent.com/d/1R0XBOX9JmBmdtOYFk2YSckzvJyqpuqhg" alt="Vista desde Policlínica Metropolitana">
+                    </div>
+                    <div class="filename-label">Bloque3_Foto6.jpg</div>
                 </div>
             </div>
         </section>
 
+        <!-- BLOQUE 4 ACTUALIZADO: SABORES Y HERMANDAD (2:00 - 2:55) -->
         <section class="narrative-block">
             <div class="block-header">
-                <h2>🗺️ BLOQUE 3: EL PULSO CIVIL Y LA ESPERANZA (1:14 - 2:00)</h2>
-                <p><strong>INTENCIÓN NARRATIVA:</strong> Reconexión con el corazón de la urbe. El personaje camina por el centro geográfico donde el este y el oeste se unen. Se introducen metáforas visuales subliminales de libertad, institucionalidad y transición democrática.</p>
+                <h2>🗺️ BLOQUE 4: SABORES Y HERMANDAD (2:00 - 2:55)</h2>
+                <p><strong>INTENCIÓN NARRATIVA:</strong> Corazón de las tradiciones, identidad gastronómica y el gran encuentro rítmico del protagonista con las raíces de su comunidad.</p>
             </div>
-
             <div class="matrix-labels">
                 <div>Tiempo (10%)</div>
                 <div>Letra Exacta (25%)</div>
@@ -433,86 +540,117 @@
             </div>
 
             <div class="scene-row">
-                <div class="col-time">1:14 - 1:34</div>
-                <div class="col-lyric">"...escondido dentro de una cabeza donde guardo las esperanzas. Y tú me has dado esa razón para hacerla y mostrarte que hay por fin..."</div>
+                <div class="col-time">2:00 - 2:08</div>
+                <div class="col-lyric">[Inicio de la sección melódica / Cambio sutil en la atmósfera]</div>
                 <div class="col-script">
-                    <strong>PLANO CENITAL (DESDE LAS ALTURAS) - TORRE DE LA PREVISORA</strong>
-                    Vista desde el café en la azotea. Captura el movimiento de los ciudadanos abajo en Plaza Venezuela. Luego, la cámara hace un paneo hacia el monumental reloj. El caos de la ciudad se mueve en perfecta sincronía con el compás de la bachata.
-                </div>
-                <div class="col-storyboard">
-                    <div class="image-container">
-                        <img src="https://lh3.googleusercontent.com/d/1pd5S3Embu8sgdFUcgBkYcnCNF0tV1EJM" alt="La Previsora">
-                    </div>
-                    <div class="filename-label">bloque3_01_vista_previsora.jpg</div>
-                </div>
-            </div>
-
-            <div class="scene-row">
-                <div class="col-time">1:34 - 2:00</div>
-                <div class="col-lyric">"...ríe mi corazón..."</div>
-                <div class="col-script">
-                    <strong>PLANO GENERAL EN CONTRAPICADO - BOULEVARD</strong>
-                    El protagonista camina a nivel de calle entre la gente de la comunidad. Mira al cielo: la cámara encuadra una bandada de palomas que alza el vuelo libremente hacia el cielo abierto (Metáfora sutil de libertad civil y democracia).
-                </div>
-                <div class="col-storyboard">
-                    <div class="image-container">
-                        <img src="https://lh3.googleusercontent.com/d/1aFLJe_Y6gKodNyDKBo3zpDk8xx5hYEb8" alt="Boulevard de Sabana Grande">
-                    </div>
-                    <div class="filename-label">bloque3_02_boulevard_libertad.jpg</div>
-                </div>
-            </div>
-        </section>
-
-        <section class="narrative-block">
-            <div class="block-header">
-                <h2>🗺️ BLOQUE 4: SABORES Y HERMANDAD CULTURAL (2:00 - 2:55)</h2>
-                <p><strong>INTENCIÓN NARRATIVA:</strong> El clímax de la identidad compartida. Los sentidos (el sabor) activan el arraigo. La música (la bachata) se convierte en el puente definitivo que une al pueblo dominicano con el venezolano en un espacio histórico y popular.</p>
-            </div>
-
-            <div class="matrix-labels">
-                <div>Tiempo (10%)</div>
-                <div>Letra Exacta (25%)</div>
-                <div>Guión Técnico y Acción (40%)</div>
-                <div>Storyboard / Foto (25%)</div>
-            </div>
-
-            <div class="scene-row">
-                <div class="col-time">2:00 - 2:20</div>
-                <div class="col-lyric">"Quédate aquí mi niña linda, mi consentida, a tu lado yo quiero vivir y tú conmigo te quieres quedar..."</div>
-                <div class="col-script">
-                    <strong>PLANO MEDIO (P.M.) - CASCO HISTÓRICO DE PETARE</strong>
-                    El personaje camina por las calles coloniales empedradas. Entra al local tradicional y muerde un golfeado con queso de mano (Plano Detalle del alimento). El sabor dulce activa su sonrisa: ha recuperado su herencia.
+                    <strong>PLANO DE ESTABLECIMIENTO - CASCO HISTÓRICO DE PETARE</strong>
+                    Vista angular limpia de la entrada al casco histórico. Calles empedradas y fachadas coloniales bien conservadas, marcando un quiebre visual hacia la tradición popular.
                 </div>
                 <div class="col-storyboard">
                     <div class="image-container">
                         <img src="https://lh3.googleusercontent.com/d/1feRqQjhULQSdfK4K2kxHKmMLJ5-21-mX" alt="Casco de Petare">
                     </div>
-                    <div class="filename-label">bloque4_01_casco_petare.jpg</div>
+                    <div class="filename-label">Bloque4_Foto1.jpg</div>
                 </div>
             </div>
 
             <div class="scene-row">
-                <div class="col-time">2:20 - 2:55</div>
-                <div class="col-lyric">"...nada podría hacerme más feliz, mis ojos ya no saben que llorar. Tu vientre dio una grata sorpresa..."</div>
+                <div class="col-time">2:08 - 2:16</div>
+                <div class="col-lyric">[Verso donde la percusión cobra mayor fuerza y ritmo]</div>
                 <div class="col-script">
-                    <strong>PLANO DE CONJUNTO (P.C.) - PLAZA DE PETARE</strong>
-                    El protagonista llega a la plaza y se encuentra de frente con Patatín Guacarán y su orquesta tocando en vivo. El personaje abre "la cajita", saca una güira dominicana y se une al ensamble. La música estalla en una celebración de hermandad cultural.
+                    <strong>PLANO MEDIO GENERAL FIJO - CALLE COLONIAL CON MÚSICOS LOCALES</strong>
+                    Grupo de personas y músicos locales arman una pequeña orquesta o grupo de percusión improvisado. El protagonista se mimetiza con ellos en la acera, capturando sonrisas y calidez.
                 </div>
                 <div class="col-storyboard">
                     <div class="image-container">
-                        <img src="https://lh3.googleusercontent.com/d/1BWmcxa96HQSAHtnOFqKTLUIlDAQd3M9S" alt="Plaza de Petare Orquesta">
+                        <img src="https://lh3.googleusercontent.com/d/1BWmcxa96HQSAHtnOFqKTLUIlDAQd3M9S" alt="Orquesta callejera Petare">
                     </div>
-                    <div class="filename-label">bloque4_03_plaza_orquesta.jpg</div>
+                    <div class="filename-label">Bloque4_Foto2.jpg</div>
+                </div>
+            </div>
+
+            <div class="scene-row">
+                <div class="col-time">2:16 - 2:24</div>
+                <div class="col-lyric">[Frase clave que introduce la calidez del hogar y las costumbres]</div>
+                <div class="col-script">
+                    <strong>PLANO DE TRANSICIÓN / MEDIO FRONTAL - CASA DEL GOLFIAO DE PETARE</strong>
+                    Fachada y entrada tradicional con texturas antiguas coloniales e iluminación cálida que invita a sumergirse en una de las costumbres más arraigadas.
+                </div>
+                <div class="col-storyboard">
+                    <div class="image-container">
+                        <img src="https://lh3.googleusercontent.com/d/1gLIlDBBGR4vVkm7CcnS16Ep_P4KP2psT" alt="Casa del Golfiao">
+                    </div>
+                    <div class="filename-label">Bloque4_Foto3.jpg</div>
+                </div>
+            </div>
+
+            <div class="scene-row">
+                <div class="col-time">2:24 - 2:32</div>
+                <div class="col-lyric">[Momento de deleite conectando con los sentidos y la memoria del exilio]</div>
+                <div class="col-script">
+                    <strong>PRIMER PLANO (CLOSE-UP) - GOLFEADO TRADICIONAL</strong>
+                    Golfeado recién salido del horno, bañado en melado de papelón brillante y coronado con un generoso trozo de queso de mano fresco derritiéndose. Metáfora pura del sabor venezolano.
+                </div>
+                <div class="col-storyboard">
+                    <div class="image-container">
+                        <img src="https://lh3.googleusercontent.com/d/1UbIA84gEBVBzvNPdPU0oDt0rvoR_9rQ-" alt="Golfeado con queso">
+                    </div>
+                    <div class="filename-label">Bloque4_Foto4.jpg</div>
+                </div>
+            </div>
+
+            <div class="scene-row">
+                <div class="col-time">2:32 - 2:40</div>
+                <div class="col-lyric">[Verso de transición hacia el clímax musical]</div>
+                <div class="col-script">
+                    <strong>PLANO DETALLE - MANOS DEL PROTAGONISTA CON PLATO DE BARRO</strong>
+                    Las manos sostienen un plato de barro con el golfeado listo para ser compartido. Refuerza el concepto de herencia familiar y comunidad que se extraña desde el extranjero.
+                </div>
+                <div class="col-storyboard">
+                    <div class="image-container">
+                        <img src="https://lh3.googleusercontent.com/d/1v-c1H8ZfkSw_6UluxJmpaxDF0fG5hTyL" alt="Compartiendo tradición">
+                    </div>
+                    <div class="filename-label">Bloque4_Foto5.jpg</div>
+                </div>
+            </div>
+
+            <div class="scene-row">
+                <div class="col-time">2:40 - 2:48</div>
+                <div class="col-lyric">[Solo de güira / Clímax instrumental más alto]</div>
+                <div class="col-script">
+                    <strong>PLANO AMERICANO DINÁMICO - PLAZA CON PATATÍN GUACARÁN Y SU ORQUESTA</strong>
+                    El protagonista se encuentra y conecta formalmente con el maestro Patatín Guacarán y su agrupación musical real en plena ejecución. Vibrante descarga en vivo que justifica el ritmo caribeño.
+                </div>
+                <div class="col-storyboard">
+                    <div class="image-container">
+                        <img src="https://lh3.googleusercontent.com/d/1kLKI5aC_rTkDPew3sXbGSehf4Ge_Qp85" alt="Performance con Patatín Guacarán">
+                    </div>
+                    <div class="filename-label">Bloque4_Foto6.jpg</div>
+                </div>
+            </div>
+
+            <div class="scene-row">
+                <div class="col-time">2:48 - 2:55</div>
+                <div class="col-lyric">[Nota sostenida / Cierre del bloque rítmico]</div>
+                <div class="col-script">
+                    <strong>GRAN PLANO GENERAL PANORÁMICO - MIRADOR DE EL VOLCÁN (EL HATILLO)</strong>
+                    Visual abierta y despejada del valle de Caracas bajo la transición de la luz de la tarde, uniendo la travesía del este con la inmensidad de la capital.
+                </div>
+                <div class="col-storyboard">
+                    <div class="image-container">
+                        <img src="https://lh3.googleusercontent.com/d/1_DQboRGGtybgX7OMZ4_d7h34h4AdDsxw" alt="Vista desde El Volcán">
+                    </div>
+                    <div class="filename-label">Bloque4_Foto7.jpg</div>
                 </div>
             </div>
         </section>
 
+        <!-- BLOQUE 5 MODIFICADO: EL ALTAR DE LA IDENTIDAD (2:55 - FINAL) -->
         <section class="narrative-block">
             <div class="block-header">
-                <h2>🗺️ BLOQUE 5: EL ALTAR DE LA RECONCILIACIÓN (2:55 - FINAL)</h2>
-                <p><strong>INTENCIÓN NARRATIVA:</strong> El arraigo final de la diáspora. El recorrido por los extremos de la ciudad cae en el refugio privado. Los recuerdos familiares se ordenan y el protagonista sella su pacto de permanencia en su patria.</p>
+                <h2>🗺️ BLOQUE 5: EL ALTAR DE LA IDENTIDAD (2:55 - FINAL)</h2>
+                <p><strong>INTENCIÓN NARRATIVA:</strong> El arraigo final de la diáspora. El protagonista encuentra su refugio en El Cují, donde la intimidad del hogar, los símbolos patrios y la contemplación de Caracas sellan su pacto de permanencia.</p>
             </div>
-
             <div class="matrix-labels">
                 <div>Tiempo (10%)</div>
                 <div>Letra Exacta (25%)</div>
@@ -520,21 +658,71 @@
                 <div>Storyboard / Foto (25%)</div>
             </div>
 
+            <!-- Elemento 1: Fachada de la casa -->
             <div class="scene-row">
-                <div class="col-time">2:55 - 3:20</div>
-                <div class="col-lyric">"...un sol que alumbra nuestro planeta en un día lluvioso y tempestad. El tiempo se ha frenado en la gaveta y la cajita ahora es nuestra reality..."</div>
+                <div class="col-time">2:55 - 3:01</div>
+                <div class="col-lyric">[Disminución paulatina del ritmo / Inicio del epílogo melódico]</div>
                 <div class="col-script">
-                    <strong>PLANO GENERAL GRANDE (P.G.G.) - METROPOLITANA / EL VOLCÁN</strong>
-                    Secuencia rápida de atardeceres. El cielo sobre La Carlota y El Ávila se tiñe de tonos dorados (Hora Dorada). Cambia a la neblina pacífica de El Volcán en El Hatillo mientras la luz del sol cae por completo.
+                    <strong>PLANO DE ESTABLECIMIENTO - FACHADA CASA EN EL CUJÍ (ALTOS MIRANDINOS)</strong>
+                    La luz de la Hora Dorada baña la estructura de estilo rústico y tradicional, transmitiendo paz, cobijo y la sensación definitiva de haber llegado al destino final tras el exilio.
                 </div>
                 <div class="col-storyboard">
                     <div class="image-container">
-                        <img src="https://lh3.googleusercontent.com/d/1NDSFFxrzaX36ibJotQVE4iltQ8PFLdoH" alt="Atardecer Caracas">
+                        <img src="https://lh3.googleusercontent.com/d/1DHxXEBkSGlMD9_tRZoa7bd_7e4ly0PyO" alt="Fachada casa El Cují">
                     </div>
-                    <div class="filename-label">bloque5_01_vista_metropolitana.jpg</div>
+                    <div class="filename-label">Bloque5_Foto1.jpg</div>
                 </div>
             </div>
 
+            <!-- Elemento 2: Toma lateral de la casa -->
+            <div class="scene-row">
+                <div class="col-time">3:01 - 3:07</div>
+                <div class="col-lyric">[Verso nostálgico final o frase de cierre del cantante]</div>
+                <div class="col-script">
+                    <strong>PLANO MEDIO GENERAL ANGULAR - TOMA LATERAL DE LA CASA COLONIAL</strong>
+                    El encuadre destaca los ventanales de madera, la vegetación de la zona montañosa y la transición de la luz de la tarde, acentuando la atmósfera de introspección y los recuerdos del protagonista.
+                </div>
+                <div class="col-storyboard">
+                    <div class="image-container">
+                        <img src="https://lh3.googleusercontent.com/d/1qrDQo99D91wtmqu3hLGhWpeDnZyMONSI" alt="Toma lateral casa El Cují">
+                    </div>
+                    <div class="filename-label">Bloque5_Foto2.jpg</div>
+                </div>
+            </div>
+
+            <!-- Elemento 3: Chimenea encendida con banderas -->
+            <div class="scene-row">
+                <div class="col-time">3:07 - 3:13</div>
+                <div class="col-lyric">[Notas finales de la música / Transición instrumental suave]</div>
+                <div class="col-script">
+                    <strong>PLANO MEDIO CERRADO - INTERIOR, CHIMENEA ENCENDIDA</strong>
+                    El protagonista enciende la chimenea. Las llamas empiezan a crepitar y la luz del fuego ilumina el espacio, donde se aprecia un sutil cruce decorativo de las banderas de Venezuela y Dominicana. Simboliza el calor del hogar recuperado y la paz del reencuentro.
+                </div>
+                <div class="col-storyboard">
+                    <div class="image-container">
+                        <img src="https://lh3.googleusercontent.com/d/1UoyW_FcugoMD8f-5grnh1tM1ZTF07tuk" alt="Chimenea encendida">
+                    </div>
+                    <div class="filename-label">Bloque5_Foto3.jpg</div>
+                </div>
+            </div>
+
+            <!-- Elemento 4: Vista de Caracas al anochecer desde El Cují -->
+            <div class="scene-row">
+                <div class="col-time">3:13 - 3:20</div>
+                <div class="col-lyric">[Último acorde / Silencio preparatorio]</div>
+                <div class="col-script">
+                    <strong>GRAN PLANO GENERAL FIJO - VISTA DE CARACAS AL ANOCHECER</strong>
+                    Desde las alturas de El Cují, cae el anochecer por completo sobre el valle y las luces de la ciudad se encienden como un manto brillante. El protagonista contempla la inmensidad de la capital desde el ventanal, sellando su arraigo definitivo.
+                </div>
+                <div class="col-storyboard">
+                    <div class="image-container">
+                        <img src="https://lh3.googleusercontent.com/d/1BPgGUSjqcu2nr6mBNtKA0c0NdWyxfR2_" alt="Anochecer Caracas desde El Cují">
+                    </div>
+                    <div class="filename-label">Bloque5_Foto4.jpg</div>
+                </div>
+            </div>
+
+            <!-- Cierre final original: interior casa con banderas unidas y reflejo (3:20 - FINAL) -->
             <div class="scene-row">
                 <div class="col-time">3:20 - FINAL</div>
                 <div class="col-lyric">[Cierre Instrumental de la Orquesta - Fade Out]</div>
@@ -544,7 +732,7 @@
                 </div>
                 <div class="col-storyboard">
                     <div class="image-container">
-                        <img src="https://lh3.googleusercontent.com/d/1DHxXEBkSGlMD9_tRZoa7bd_7e4ly0PyO" alt="Interior Casa El Cují">
+                        <img src="https://lh3.googleusercontent.com/d/1DOtej4KKLekv6C5qzAKW4ZlPTjQFWeiI" alt="Interior Casa El Cují noche">
                     </div>
                     <div class="filename-label">bloque5_03_casa_cuji_interior.jpg</div>
                 </div>
